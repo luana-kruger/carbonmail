@@ -1,8 +1,8 @@
 # Onde estarão todas as funções deste pacote.
 # Ele é quem vai coodernar este pacote (gerenciador)
 
-def iniatialize(email_sender):
-    from carbonmail.list_editor import List_Editor
+def iniatialize():
+    from carbonmail.email_sender import Email_Sender
 
-    ems = List_Editor(email_sender)
+    ems = Email_Sender()
     ems.enable_window()
